@@ -1,1 +1,2 @@
 fastapi[all] == 0.110.0
+python-dotenv == 1.0.0
