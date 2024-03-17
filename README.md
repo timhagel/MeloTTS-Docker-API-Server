@@ -7,11 +7,16 @@ A quick easy way to access [MeloTTS](https://github.com/myshell-ai/MeloTTS) thro
 Assuming you have docker installed and setup
 
 ### Build
+#### Local
 
     git clone git@github.com:timhagel/melotts-api-server.git
     cd melotts-api-server
-    docker build -t melotts-api-server .
+    docker build -t timhagel/melotts-api-server .
 
+#### Image
+
+    docker pull timhagel/melotts-api-server
+    
 ### Languages and Speakers
 
 #### Language
@@ -34,7 +39,7 @@ Assuming you have docker installed and setup
 
 ### Run (English)
 
-    docker run -p 8888:8080 -e DEFAULT_SPEED=1 -e DEFAULT_LANGUAGE=EN -e DEFAULT_SPEAKER_ID=EN-US  melotts-api-server
+    docker run -p 8888:8080 -e DEFAULT_SPEED=1 -e DEFAULT_LANGUAGE=EN -e DEFAULT_SPEAKER_ID=EN-US  timhagel/melotts-api-server
 
 ### Call API
 
