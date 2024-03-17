@@ -2,6 +2,8 @@
 
 A quick easy way to access [MeloTTS](https://github.com/myshell-ai/MeloTTS) through REST API calls.
 
+## Usage
+
 Assuming you have docker installed and setup
 
 ### Build
