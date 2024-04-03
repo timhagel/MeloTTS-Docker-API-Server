@@ -7,6 +7,7 @@ A quick easy way to access [MeloTTS](https://github.com/myshell-ai/MeloTTS) thro
 Assuming you have docker installed and setup
 
 ### Build
+(This might take a bit because MeloTTS is a big dependency)
 #### Local
 
     git clone git@github.com:timhagel/melotts-api-server.git
@@ -22,7 +23,7 @@ Assuming you have docker installed and setup
 #### Language
 
 - EN - English
-- ES - Spainish
+- ES - Spanish
 - FR - French
 - ZH - Chinese
 - JP - Japanese
@@ -35,7 +36,7 @@ Assuming you have docker installed and setup
 - EN_INDIA - Indian english accent
 - EN-AU - Australian english accent
 - EN-Default - Default english accent
-- **Notice!** Currently only english accents are working, and other accents are returning an error. This dose not mean that other language do not work!
+- **Notice!** Currently only english accents are working, and other accents are returning an error. This does not mean that other languages do not work!
 
 ### Run (English)
 
@@ -66,4 +67,4 @@ Response : .wav
 
 ## Acknowledgement
 
-This just a API server for the awesome work of [MeloTTS](https://github.com/myshell-ai/MeloTTS) from [MyShell](https://github.com/myshell-ai)
+This is just an API server for the awesome work of [MeloTTS](https://github.com/myshell-ai/MeloTTS) from [MyShell](https://github.com/myshell-ai)
