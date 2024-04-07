@@ -14,7 +14,7 @@ Assuming you have docker installed and setup
     cd MeloTTS-Docker-API-Server
     docker build -t timhagel/melotts-api-server .
 
-#### Image
+#### Docker Hub
 
     docker pull timhagel/melotts-api-server
     
