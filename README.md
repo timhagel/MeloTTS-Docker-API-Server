@@ -1,4 +1,4 @@
-# MeloTTS API Server
+# MeloTTS Docker API Server
 
 A quick easy way to access [MeloTTS](https://github.com/myshell-ai/MeloTTS) through REST API calls.
 
