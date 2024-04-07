@@ -10,8 +10,8 @@ Assuming you have docker installed and setup
 (This might take a bit because MeloTTS is a big dependency)
 #### Local
 
-    git clone git@github.com:timhagel/melotts-api-server.git
-    cd melotts-api-server
+    git clone git@github.com:timhagel/MeloTTS-Docker-API-Server.git
+    cd MeloTTS-Docker-API-Server
     docker build -t timhagel/melotts-api-server .
 
 #### Image
