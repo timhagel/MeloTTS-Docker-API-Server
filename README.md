@@ -31,12 +31,12 @@ Assuming you have docker installed and setup
 
 #### Speaker IDs
 
-- EN-US - American english accent
-- EN-BR - British english accent
-- EN_INDIA - Indian english accent
-- EN-AU - Australian english accent
-- EN-Default - Default english accent
-- **Notice!** Currently only english accents are working, and other accents are returning an error. This does not mean that other languages do not work!
+- EN-US - American English accent
+- EN-BR - British English accent
+- EN_INDIA - Indian English accent
+- EN-AU - Australian English accent
+- EN-Default - Default English accent
+- **Notice!** Currently only English accents are working, and other accents are returning an error. This does not mean that other languages do not work!
 
 ### Run (CPU) (English)
 
@@ -56,7 +56,7 @@ Assuming you have docker installed and setup
         "text": "Put input here"
     }
 
-Response : .wav
+Response: .wav
 
 ##### Customize (Everything except for "text" is optional)
 
@@ -67,7 +67,7 @@ Response : .wav
         "speaker_id": "speaker_id"
     }
 
-Response : .wav
+Response: .wav
 
 ## Acknowledgement
 
