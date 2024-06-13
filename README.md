@@ -44,7 +44,7 @@ Assuming you have docker installed and setup
 
 ### Run (GPU) (English)
     
-    docker run -p 8888:8080 --gpu=all -e DEFAULT_SPEED=1 -e DEFAULT_LANGUAGE=EN -e DEFAULT_SPEAKER_ID=EN-US timhagel/melotts-api-server
+    docker run -p 8888:8080 --gpus=all -e DEFAULT_SPEED=1 -e DEFAULT_LANGUAGE=EN -e DEFAULT_SPEAKER_ID=EN-US timhagel/melotts-api-server
 
 ### Call API
 
