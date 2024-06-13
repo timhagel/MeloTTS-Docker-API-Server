@@ -38,9 +38,13 @@ Assuming you have docker installed and setup
 - EN-Default - Default english accent
 - **Notice!** Currently only english accents are working, and other accents are returning an error. This does not mean that other languages do not work!
 
-### Run (English)
+### Run (CPU) (English)
 
-    docker run -p 8888:8080 -e DEFAULT_SPEED=1 -e DEFAULT_LANGUAGE=EN -e DEFAULT_SPEAKER_ID=EN-US  timhagel/melotts-api-server
+    docker run -p 8888:8080 -e DEFAULT_SPEED=1 -e DEFAULT_LANGUAGE=EN -e DEFAULT_SPEAKER_ID=EN-US timhagel/melotts-api-server
+
+### Run (GPU) (English)
+    
+    docker run -p 8888:8080 --gpu=all -e DEFAULT_SPEED=1 -e DEFAULT_LANGUAGE=EN -e DEFAULT_SPEAKER_ID=EN-US timhagel/melotts-api-server
 
 ### Call API
 
