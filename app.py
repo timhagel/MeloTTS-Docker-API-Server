@@ -32,10 +32,6 @@ async def create_upload_file(body: TextModel = Body(...), model: TTS = Depends(g
     output_path = body.language + "_" + body.speaker_id + ".wav"
     model.tts_to_file(body.text, speaker_ids[body.speaker_id], output_path, speed=body.speed)
 
-    # Create a temporary file
-    output_path = body.language + "_" + body.speaker_id + ".wav"
-    model.tts_to_file(body.text, speaker_ids[body.speaker_id], output_path, speed=body.speed)
-
     print(os.path.basename(output_path))
     # Return the audio file
     response = FileResponse(output_path, media_type="audio/mpeg", filename=os.path.basename(output_path))
