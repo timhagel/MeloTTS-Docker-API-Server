@@ -52,20 +52,47 @@ Assuming you have docker installed and setup
 
 ##### Use Environment Defaults
 
-    {
-        "text": "Put input here"
-    }
+###### Post body:
+```
+{
+    "text": "Put input here"
+}
+```
+
+###### Example curl command:
+```sh
+curl http://localhost:8888/convert/tts \
+--header "Content-Type: application/json" \
+-d '{ "text": "Put input here" }' \
+--output "example.wav"
+```
 
 Response: .wav
 
 ##### Customize (Everything except for "text" is optional)
 
-    {
-        "text": "input",
-        "speed": "speed",
-        "language": "language",
-        "speaker_id": "speaker_id"
-    }
+###### Post body:
+```
+{
+    "text": "input",
+    "speed": "speed",
+    "language": "language",
+    "speaker_id": "speaker_id"
+}
+```
+
+###### Example curl command:
+```sh
+curl http://localhost:8888/convert/tts \
+--header "Content-Type: application/json" \
+-d '{
+  "text": "Put input here",
+  "speed": "0.5",
+  "language": "EN",
+  "speaker_id": "EN-BR"
+}' \
+--output "example.wav"
+```
 
 Response: .wav
 
