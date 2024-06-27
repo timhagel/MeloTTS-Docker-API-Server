@@ -2,11 +2,9 @@
 
 A quick easy way to access [MeloTTS](https://github.com/myshell-ai/MeloTTS) through REST API calls.
 
-## Usage
+## Build Image
+Assuming you have docker installed and setup.
 
-Assuming you have docker installed and setup
-
-### Build
 (This might take a bit because MeloTTS is a big dependency)
 #### Local
 
@@ -18,7 +16,7 @@ Assuming you have docker installed and setup
 
     docker pull timhagel/melotts-api-server
     
-### Languages and Speakers
+## Languages and Speakers
 
 #### Language
 
@@ -38,6 +36,8 @@ Assuming you have docker installed and setup
 - EN-Default - Default English accent
 - **Notice!** Currently only English accents are working, and other accents are returning an error. This does not mean that other languages do not work!
 
+## Running
+
 ### Run (CPU) (English)
 
     docker run --name melotts-server -p 8888:8080 -e DEFAULT_SPEED=1 -e DEFAULT_LANGUAGE=EN -e DEFAULT_SPEAKER_ID=EN-Default timhagel/melotts-api-server
@@ -46,11 +46,12 @@ Assuming you have docker installed and setup
     
     docker run --name melotts-server -p 8888:8080 --gpus=all -e DEFAULT_SPEED=1 -e DEFAULT_LANGUAGE=EN -e DEFAULT_SPEAKER_ID=EN-Default timhagel/melotts-api-server
 
-### Call API
+## Call API
 
 **localhost:8888/convert/tts**
 
-##### Use Environment Defaults
+### Use Environment Defaults
+Response: .wav
 
 ###### Post body:
 ```
@@ -67,9 +68,8 @@ curl http://localhost:8888/convert/tts \
 --output "example.wav"
 ```
 
+### Customize (Everything except for "text" is optional)
 Response: .wav
-
-##### Customize (Everything except for "text" is optional)
 
 ###### Post body:
 ```
@@ -93,8 +93,6 @@ curl http://localhost:8888/convert/tts \
 }' \
 --output "example.wav"
 ```
-
-Response: .wav
 
 ## Acknowledgement
 
