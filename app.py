@@ -8,9 +8,9 @@ from dotenv import load_dotenv
 import tempfile
 
 load_dotenv()
-DEFAULT_SPEED = float(os.getenv("DEFAULT_SPEED"))
-DEFAULT_LANGUAGE = os.getenv("DEFAULT_LANGUAGE")
-DEFAULT_SPEAKER_ID = os.getenv("DEFAULT_SPEAKER_ID")
+DEFAULT_SPEED = float(os.getenv("DEFAULT_SPEED", 1.0))
+DEFAULT_LANGUAGE = os.getenv("DEFAULT_LANGUAGE", "EN")
+DEFAULT_SPEAKER_ID = os.getenv("DEFAULT_SPEAKER_ID", "EN-Default")
 device = "auto"  # Will automatically use GPU if available
 
 
